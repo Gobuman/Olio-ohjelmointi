@@ -1,0 +1,15 @@
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\bin\Debug\net6.0\Ruoka-annos.exe
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\bin\Debug\net6.0\Ruoka-annos.deps.json
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\bin\Debug\net6.0\Ruoka-annos.runtimeconfig.json
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\bin\Debug\net6.0\Ruoka-annos.dll
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\bin\Debug\net6.0\Ruoka-annos.pdb
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\obj\Debug\net6.0\Ruoka-annos.csproj.AssemblyReference.cache
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\obj\Debug\net6.0\Ruoka-annos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\obj\Debug\net6.0\Ruoka-annos.AssemblyInfoInputs.cache
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\obj\Debug\net6.0\Ruoka-annos.AssemblyInfo.cs
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\obj\Debug\net6.0\Ruoka-annos.csproj.CoreCompileInputs.cache
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\obj\Debug\net6.0\Ruoka-annos.dll
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\obj\Debug\net6.0\refint\Ruoka-annos.dll
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\obj\Debug\net6.0\Ruoka-annos.pdb
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\obj\Debug\net6.0\Ruoka-annos.genruntimeconfig.cache
+C:\Users\s2100944\source\repos\Ruoka-annos\Ruoka-annos\obj\Debug\net6.0\ref\Ruoka-annos.dll
