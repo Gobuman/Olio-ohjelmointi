@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s2100944\\source\\repos\\NuoliaKaupan\\NuoliaKaupan\\NuoliaKaupan.csproj",
+      "projectUniqueName": "C:\\Users\\s2100944\\source\\repos\\olio-ohjelmointi\\NuoliaKaupan\\NuoliaKaupan\\NuoliaKaupan.csproj",
       "projectName": "NuoliaKaupan",
-      "projectPath": "C:\\Users\\s2100944\\source\\repos\\NuoliaKaupan\\NuoliaKaupan\\NuoliaKaupan.csproj",
+      "projectPath": "C:\\Users\\s2100944\\source\\repos\\olio-ohjelmointi\\NuoliaKaupan\\NuoliaKaupan\\NuoliaKaupan.csproj",
       "packagesPath": "C:\\Users\\s2100944\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s2100944\\source\\repos\\NuoliaKaupan\\NuoliaKaupan\\obj\\",
+      "outputPath": "C:\\Users\\s2100944\\source\\repos\\olio-ohjelmointi\\NuoliaKaupan\\NuoliaKaupan\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

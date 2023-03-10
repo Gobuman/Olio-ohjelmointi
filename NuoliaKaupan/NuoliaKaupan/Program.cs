@@ -2,38 +2,85 @@
 
 string karkitilaus = "a";
 string peratilaus = "b";
+string vas = "c";
 int pituustilaus = 0;
 string haluttupituus;
+Nuoli tilattuNuoli;
 
-Console.WriteLine("Minkälainen kärki (puu, teräs, timantti) :");
-while (karkitilaus != "puu" || karkitilaus != "teräs" || karkitilaus != "timantti")
+while (true)
 {
-    karkitilaus = Console.ReadLine();
-    if (karkitilaus == "puu" || karkitilaus == "timantti" || karkitilaus == "teräs")
+    Console.WriteLine("Haluaisitko tehdä sinun oma nuoli (oma)");
+    Console.WriteLine("Tai haluaisitko valita valmiina tehty nuoli (valitse)");
+    vas = Console.ReadLine();
+
+    if (vas == "oma" || vas == "valitse")
     {
         break;
     }
 }
-Console.WriteLine("Minkälainen perä (lehti, kanansulka, kotkansulka) :");
-while (peratilaus != "lehti" || peratilaus != "kanansulka" || peratilaus != "kotkansulka")
+    
+if (vas == "oma")
 {
-    peratilaus = Console.ReadLine();
-    if (peratilaus == "lehti" || peratilaus == "kanansulka" || peratilaus == "kotkansulka")
+    Console.WriteLine("Minkälainen kärki (puu, teräs, timantti) :");
+    while (karkitilaus != "puu" || karkitilaus != "teräs" || karkitilaus != "timantti")
     {
-        break;
+        karkitilaus = Console.ReadLine();
+        if (karkitilaus == "puu" || karkitilaus == "timantti" || karkitilaus == "teräs")
+        {
+            break;
+        }
     }
+    Console.WriteLine("Minkälainen perä (lehti, kanansulka, kotkansulka) :");
+    while (peratilaus != "lehti" || peratilaus != "kanansulka" || peratilaus != "kotkansulka")
+    {
+        peratilaus = Console.ReadLine();
+        if (peratilaus == "lehti" || peratilaus == "kanansulka" || peratilaus == "kotkansulka")
+        {
+            break;
+        }
+    }
+    Console.WriteLine("Nuolen pituus (60-100cm) :");
+    while (pituustilaus < 60 || pituustilaus > 100)
+    {
+        haluttupituus = Console.ReadLine();
+
+        if (int.TryParse(haluttupituus, out pituustilaus) == true && pituustilaus < 100 && pituustilaus > 60)
+        {
+            break;
+        }
+    }
+    tilattuNuoli = new Nuoli(karkitilaus, peratilaus, pituustilaus);
+    Console.WriteLine($"Nuoli maksaa {tilattuNuoli.PalautaHinta} kultaa");
+
 }
-Console.WriteLine("Nuolen pituus (60-100cm) :");
-while (pituustilaus < 60 || pituustilaus > 100)
+
+else if (vas == "valitse")
 {
-    haluttupituus = Console.ReadLine();
-    if (int.TryParse(haluttupituus, out pituustilaus) == true && pituustilaus < 100 && pituustilaus > 60)
+    while (true)
     {
-        break;
+        Console.WriteLine("Minkälainen nuoli haluaisit ostaa (aloittelija, perus, eliitti)");
+        vas = Console.ReadLine();
+
+        if (vas == "aloittelija")
+        {
+            tilattuNuoli = Nuoli.LuoAloittelijaNuoli();
+            break;
+        }
+        else if (vas == "perus")
+        {
+            tilattuNuoli = Nuoli.LuoPerusNuoli();
+            break;
+        }
+        else if (vas == "eliitti")
+        {
+            tilattuNuoli = Nuoli.LuoEliittiNuoli();
+            break;
+        }
     }
+    Console.WriteLine($"{vas} nuoli maksaa {tilattuNuoli.PalautaHinta} kultaa");
+
 }
-Nuoli tilattuNuoli = new Nuoli(karkitilaus, peratilaus, pituustilaus);
-Console.WriteLine("Nuoli maksaa " + tilattuNuoli.PalautaHinta + " kultaa");
+
 
 
 
@@ -44,11 +91,24 @@ public class Nuoli
     private double _pituus;
     private double nuolenhinta;
 
+    public static Nuoli LuoEliittiNuoli()
+    {
+        return new Nuoli("timantti", "kotkansulka", 100);
+    }
+    public static Nuoli LuoPerusNuoli()
+    {
+        return new Nuoli("teräs", "kanansulka", 85);
+    }
+    public static Nuoli LuoAloittelijaNuoli()
+    {
+        return new Nuoli("puu", "kanansulka", 70);
+    }
     public Nuoli(string karki, string pera, int pituus)
     {
         _karki = karki;
         _pera = pera;
         _pituus = pituus;
+
         if (_karki == "puu")
         {
             nuolenhinta += 3;
@@ -69,6 +129,9 @@ public class Nuoli
         {
             nuolenhinta += 5;
         }
+
+
+
         nuolenhinta = nuolenhinta + _pituus * 0.05;
         return;
     }
