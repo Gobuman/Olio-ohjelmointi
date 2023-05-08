@@ -5,43 +5,41 @@ public class Robotti
     public int X { get; set; }
     public int Y { get; set; }
     public bool OnKäynnissä { get; set; }
-    public  RobottiKasky?[] Käskyt { get; } = new RobottiKasky?[3];
+    public  IRobottiKasky?[] Käskyt { get; } = new IRobottiKasky?[3];
 
     public void Suorita()
     {
-        foreach (RobottiKasky? käsky in Käskyt)
+        foreach (IRobottiKasky? käsky in Käskyt)
         {
             käsky?.Suorita(this);
             Console.WriteLine($"[{X},{Y} {OnKäynnissä}]");
         }
     }
 }
-
-
-public abstract class RobottiKasky
+public interface IRobottiKasky
 {
-    public abstract void Suorita(Robotti Käskyt);
+    void Suorita(Robotti käskyt);
 }
 
-public class Käynnistä : RobottiKasky
+public class Käynnistä : IRobottiKasky
 {
-    public override void Suorita(Robotti käskyt)
+    public void Suorita(Robotti käskyt)
     {
         käskyt.OnKäynnissä = true;
     }
 }
 
-public class Sammuta : RobottiKasky
+public class Sammuta : IRobottiKasky
 {
-    public override void Suorita(Robotti käskyt)
+    public void Suorita(Robotti käskyt)
     {
         käskyt.OnKäynnissä = false;
     }
 }
 
-public class Vasen : RobottiKasky
+public class Vasen : IRobottiKasky
 {
-    public override void Suorita(Robotti Käskyt)
+    public void Suorita(Robotti Käskyt)
     {
         if (Käskyt.OnKäynnissä)
         {
@@ -49,9 +47,9 @@ public class Vasen : RobottiKasky
         }
     }
 }
-public class Oikea : RobottiKasky
+public class Oikea : IRobottiKasky
 {
-    public override void Suorita(Robotti Käskyt)
+    public void Suorita(Robotti Käskyt)
     {
         if (Käskyt.OnKäynnissä)
         {
@@ -59,9 +57,9 @@ public class Oikea : RobottiKasky
         }
     }
 }
-public class Ylös : RobottiKasky
+public class Ylös : IRobottiKasky
 {
-    public override void Suorita(Robotti Käskyt)
+    public void Suorita(Robotti Käskyt)
     {
         if (Käskyt.OnKäynnissä)
         {
@@ -69,9 +67,9 @@ public class Ylös : RobottiKasky
         }
     }
 }
-public class Alas : RobottiKasky
+public class Alas : IRobottiKasky
 {
-    public override void Suorita(Robotti Käskyt)
+    public void Suorita(Robotti Käskyt)
     {
         if (Käskyt.OnKäynnissä)
         {
@@ -88,32 +86,38 @@ class program
         for (int i = 0; i < 3; i++)
         {
             
-            Console.WriteLine("Mitä kommentoa syötetään robotille: käynistä, sammuta, ylös, alas, vasen, oikea.");
+            Console.WriteLine("Mitä kommentoa syötetään robotille: käynistä, sammuta, ylos, alas, vasen, oikea.");
             string vastaus = Console.ReadLine();
             
             if(vastaus == "käynistä")
             {
                 robotti.Käskyt[i] = new Käynnistä();
+                continue;
             }
             if(vastaus == "sammuta")
             {
                 robotti.Käskyt[i] = new Sammuta();
+                continue;
             }
             if(vastaus == "vasen")
             {
                 robotti.Käskyt[i] = new Vasen();
+                continue;
             }
             if(vastaus == "oikea")
             {
                 robotti.Käskyt[i] = new Oikea();
+                continue;
             }
             if(vastaus == "ylös")
             {
                 robotti.Käskyt[i] = new Ylös();
+                continue;
             }
             if(vastaus == "alas")
             {
                 robotti.Käskyt[i] = new Alas();
+                continue;
             }
             else
             {
