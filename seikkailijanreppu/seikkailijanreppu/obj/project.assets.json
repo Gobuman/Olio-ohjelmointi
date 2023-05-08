@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s2100944\\source\\repos\\seikkailijanreppu\\seikkailijanreppu\\seikkailijanreppu.csproj",
+      "projectUniqueName": "C:\\Users\\s2100944\\source\\repos\\olio-ohjelmointi\\seikkailijanreppu\\seikkailijanreppu\\seikkailijanreppu.csproj",
       "projectName": "seikkailijanreppu",
-      "projectPath": "C:\\Users\\s2100944\\source\\repos\\seikkailijanreppu\\seikkailijanreppu\\seikkailijanreppu.csproj",
+      "projectPath": "C:\\Users\\s2100944\\source\\repos\\olio-ohjelmointi\\seikkailijanreppu\\seikkailijanreppu\\seikkailijanreppu.csproj",
       "packagesPath": "C:\\Users\\s2100944\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s2100944\\source\\repos\\seikkailijanreppu\\seikkailijanreppu\\obj\\",
+      "outputPath": "C:\\Users\\s2100944\\source\\repos\\olio-ohjelmointi\\seikkailijanreppu\\seikkailijanreppu\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
