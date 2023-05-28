@@ -8,11 +8,11 @@ class laukku
 
     public double Tilavuus { get; set; }
 
-    public laukku(double x, double y)
+    public laukku(double paino, double tilavuus)
     {
 
-        Paino = x;
-        Tilavuus = y;
+        Paino = paino;
+        Tilavuus = tilavuus;
     }
 
     
@@ -134,13 +134,13 @@ class program
     static void Main(string[] args)
     {
         Reppu reppu = new Reppu(10, 30, 20);
-
+            laukku tavara = null;
        
         
         while (true)
         {
             
-            laukku tavara = null;
+
             Console.WriteLine(reppu.ToString());
             Console.WriteLine(" ");
             Console.WriteLine($"Repussa on tällä hetkellä {reppu.tavaroidenMaara}/10 tavaraa, {reppu.tavaroidenPaino}/30 paino, ja {reppu.tavaroidenTilavuus}/20 tilavuus");

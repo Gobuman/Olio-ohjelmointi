@@ -1,0 +1,15 @@
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\bin\Debug\net6.0\Loppupeliprojekti.exe
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\bin\Debug\net6.0\Loppupeliprojekti.deps.json
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\bin\Debug\net6.0\Loppupeliprojekti.runtimeconfig.json
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\bin\Debug\net6.0\Loppupeliprojekti.dll
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\bin\Debug\net6.0\Loppupeliprojekti.pdb
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\obj\Debug\net6.0\Loppupeliprojekti.csproj.AssemblyReference.cache
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\obj\Debug\net6.0\Loppupeliprojekti.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\obj\Debug\net6.0\Loppupeliprojekti.AssemblyInfoInputs.cache
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\obj\Debug\net6.0\Loppupeliprojekti.AssemblyInfo.cs
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\obj\Debug\net6.0\Loppupeliprojekti.csproj.CoreCompileInputs.cache
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\obj\Debug\net6.0\Loppupeliprojekti.dll
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\obj\Debug\net6.0\refint\Loppupeliprojekti.dll
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\obj\Debug\net6.0\Loppupeliprojekti.pdb
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\obj\Debug\net6.0\Loppupeliprojekti.genruntimeconfig.cache
+C:\Users\s2100944\source\repos\Loppupeliprojekti\Loppupeliprojekti\obj\Debug\net6.0\ref\Loppupeliprojekti.dll
